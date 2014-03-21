@@ -28,5 +28,6 @@ public final class MainProgram {
       System.out.println(e);
     }
     System.out.println();
+    System.out.println("Waiting for players...");
   }
 }
