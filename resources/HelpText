@@ -15,18 +15,20 @@ joined. The game ends when only one player is left. A player will
 leave the game after being made to drink a specified number of
 drinks. If the player has drinks remaining, they must finish them, but
 should not be assigned any more drinks.
-Commands:
+
+Commands
+--------
 HELP
  Print these instructions
-ADD [player name] [drinking time] Adds named player.
-Drinking time is time to finish 1
-drink
+
+ADD [player name] [drinking time]
+ Adds named player. [drinking time] is time to finish 1 drink.
+
 SPEED [seconds]
- Number of seconds between
-rolls.
-Default 2.
+ Number of seconds between rolls. Default: 2
+
 MAX [drinks]
- Number of drinks before player
-drops out. Default 5.
+ Number of drinks before player drops out. Default: 5
+
 START
  Start the simulation
