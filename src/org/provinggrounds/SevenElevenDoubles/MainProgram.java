@@ -1,3 +1,5 @@
+package org.provinggrounds.SevenElevenDoubles;
+
 import java.util.List;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
