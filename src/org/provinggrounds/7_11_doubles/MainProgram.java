@@ -21,7 +21,7 @@ public final class MainProgram {
     }
     }
     catch(IOException e) {
-      System.out.println("Failed to read HelpText file: ");
+      System.out.println("Failed to read help text from file: ");
       System.out.println(e);
     }
     System.out.println();
