@@ -9,6 +9,7 @@ import java.io.IOException;
 public final class MainProgram {
 
   private static final String helpTextResourceFile = "HelpText";
+  private static final String RESOURCE_DIR = "./resources/";
 
   public static void main(String args[]) {
     printHelpText();
@@ -17,7 +18,7 @@ public final class MainProgram {
   private static void printHelpText() {
     System.out.println();
     try {
-    List<String> helpTextLines = Files.readAllLines(Paths.get("./resources/" + helpTextResourceFile), StandardCharsets.UTF_8);
+    List<String> helpTextLines = Files.readAllLines(Paths.get(RESOURCE_DIR + helpTextResourceFile), StandardCharsets.UTF_8);
     for(String lineOfText : helpTextLines) {
       System.out.println(lineOfText);
     }
