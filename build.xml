@@ -19,5 +19,6 @@
     </target>
 
     <target name="run" description="Runs program" depends="build">
+        <java classname="org.provinggrounds.SevenElevenDoubles.MainProgram" classpath="${builddir}"/>
     </target>
 </project>
