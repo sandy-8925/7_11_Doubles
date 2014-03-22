@@ -4,7 +4,7 @@
     <property name="srcdir" value="src" />
     <property name="builddir" value="build"/>
     <property name="bindir" value="bin" />
-    <property name="resourcedir" value="resources" />
+    <property name="resourcedir" value="res" />
 
     <target name="help" description="Displays help text">
         <echo message="Execute 'ant build' to compile source code" />
