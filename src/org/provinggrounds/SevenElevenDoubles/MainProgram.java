@@ -13,6 +13,9 @@ public final class MainProgram {
 
   public static void main(String args[]) {
     printHelpText();
+    //accept commands from players
+    //setup game
+    //start game
   }
 
   private static void printHelpText() {
