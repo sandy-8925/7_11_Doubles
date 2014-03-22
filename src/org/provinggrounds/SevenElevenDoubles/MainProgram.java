@@ -1,6 +1,7 @@
 package org.provinggrounds.SevenElevenDoubles;
 
 import org.provinggrounds.SevenElevenDoubles.Game.CommandProcessor;
+import org.provinggrounds.SevenElevenDoubles.Game.GameFactory;
 
 import java.io.Console;
 import java.util.List;
