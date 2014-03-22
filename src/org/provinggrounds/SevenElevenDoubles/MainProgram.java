@@ -11,16 +11,16 @@ import java.io.IOException;
 
 public final class MainProgram {
 
-  private static final String helpTextResourceFile = "HelpText";
-  private static final String RESOURCE_DIR = "./resources/";
+    private static final String helpTextResourceFile = "HelpText";
+    private static final String RESOURCE_DIR = "./resources/";
 
-  public static void main(String args[]) {
-    printHelpText();
-    //accept commands from players
-    processUserCommands();
-    //setup game
-    //start game
-  }
+    public static void main(String args[]) {
+        printHelpText();
+        //accept commands from players
+        processUserCommands();
+        //setup game
+        //start game
+    }
 
     /**
      * Accept commands from user and process them
@@ -29,7 +29,7 @@ public final class MainProgram {
         //until game needs to be started, keep accepting and processing commands
         boolean keepProcessingUserCommands = true;
         final Console console = System.console();
-        while(keepProcessingUserCommands) {
+        while (keepProcessingUserCommands) {
             //display prompt
             System.out.print(">");
             //read user command
@@ -37,7 +37,7 @@ public final class MainProgram {
             //parse command
             CommandProcessor.processCommand(userCommand);
             //if game is ready to start (when numPlayers>=2 and start command was given)
-            if(GameFactory.gameStartSignalled()) {
+            if (GameFactory.gameStartSignalled()) {
                 keepProcessingUserCommands = false;
                 break;
             }
