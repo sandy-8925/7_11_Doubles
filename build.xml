@@ -14,10 +14,14 @@
     <target name="build" description="Compile all source code">
         <mkdir dir="${builddir}"/>
         <javac srcdir="${srcdir}" destdir="${builddir}"/>
+        <mkdir dir="${bindir}"/>
+        <jar destfile="${bindir}/SevenElevenDoubles.jar" basedir="${builddir}"/>
+        <jar destfile="${bindir}/SevenElevenDoubles.jar" basedir="${resourcedir}"/>
     </target>
 
     <target name="clean" description="Cleans up build directory">
         <delete dir="${builddir}"/>
+        <delete dir="${bindir}"/>
     </target>
 
     <target name="run" description="Runs program" depends="build">
