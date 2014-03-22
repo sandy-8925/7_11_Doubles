@@ -22,6 +22,9 @@ public final class MainProgram {
     //start game
   }
 
+    /**
+     * Accept commands from user and process them
+     */
     private static void processUserCommands() {
         //until game needs to be started, keep accepting and processing commands
         boolean keepProcessingUserCommands = true;
@@ -41,6 +44,9 @@ public final class MainProgram {
         }
     }
 
+    /**
+     * Prints help text to screen
+     */
     private static void printHelpText() {
         System.out.println();
         try {
