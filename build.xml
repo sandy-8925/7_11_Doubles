@@ -24,6 +24,7 @@
         <delete dir="${bindir}"/>
     </target>
 
+    <!-- Show instructions to run program instead of running from Ant due to interactive nature of program -->
     <target name="run" description="Shows instructions for running program" depends="build">
         <echo message="Run jar file in ${bindir}" />
     </target>
