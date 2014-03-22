@@ -41,19 +41,18 @@ public final class MainProgram {
         }
     }
 
-  private static void printHelpText() {
-    System.out.println();
-    try {
-    List<String> helpTextLines = Files.readAllLines(Paths.get(RESOURCE_DIR + helpTextResourceFile), StandardCharsets.UTF_8);
-    for(String lineOfText : helpTextLines) {
-      System.out.println(lineOfText);
+    private static void printHelpText() {
+        System.out.println();
+        try {
+            List<String> helpTextLines = Files.readAllLines(Paths.get(RESOURCE_DIR + helpTextResourceFile), StandardCharsets.UTF_8);
+            for (String lineOfText : helpTextLines) {
+                System.out.println(lineOfText);
+            }
+        } catch (IOException e) {
+            System.out.println("Failed to read help text from file: ");
+            System.out.println(e);
+        }
+        System.out.println();
+        System.out.println("Waiting for players...");
     }
-    }
-    catch(IOException e) {
-      System.out.println("Failed to read help text from file: ");
-      System.out.println(e);
-    }
-    System.out.println();
-    System.out.println("Waiting for players...");
-  }
 }
