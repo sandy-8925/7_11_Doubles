@@ -15,8 +15,8 @@
         <mkdir dir="${builddir}"/>
         <javac srcdir="${srcdir}" destdir="${builddir}"/>
         <mkdir dir="${bindir}"/>
-        <jar destfile="${bindir}/SevenElevenDoubles.jar" basedir="${builddir}" whenmanifestonly="fail" manifest="MANIFEST.MF"/>
-        <jar destfile="${bindir}/SevenElevenDoubles.jar" basedir="${resourcedir}"/>
+        <jar destfile="${bindir}/SevenElevenDoubles.jar" basedir="${builddir}" manifest="MANIFEST.MF" whenmanifestonly="fail"/>
+        <jar destfile="${bindir}/SevenElevenDoubles.jar" basedir="${resourcedir}" update="true"/>
     </target>
 
     <target name="clean" description="Cleans up build directory">
