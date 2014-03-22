@@ -15,7 +15,7 @@
         <mkdir dir="${builddir}"/>
         <javac srcdir="${srcdir}" destdir="${builddir}"/>
         <mkdir dir="${bindir}"/>
-        <jar destfile="${bindir}/SevenElevenDoubles.jar" basedir="${builddir}"/>
+        <jar destfile="${bindir}/SevenElevenDoubles.jar" basedir="${builddir}" whenmanifestonly="fail"/>
         <jar destfile="${bindir}/SevenElevenDoubles.jar" basedir="${resourcedir}"/>
     </target>
 
