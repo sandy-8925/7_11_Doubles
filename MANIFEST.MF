@@ -1,1 +1,2 @@
-Main-Class: MainProgram
+Main-Class: org.provinggrounds.SevenElevenDoubles.MainProgram
+
