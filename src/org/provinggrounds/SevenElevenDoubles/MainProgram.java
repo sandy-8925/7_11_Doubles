@@ -1,5 +1,8 @@
 package org.provinggrounds.SevenElevenDoubles;
 
+import org.provinggrounds.SevenElevenDoubles.Game.CommandProcessor;
+
+import java.io.Console;
 import java.util.List;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -14,9 +17,29 @@ public final class MainProgram {
   public static void main(String args[]) {
     printHelpText();
     //accept commands from players
+    processUserCommands();
     //setup game
     //start game
   }
+
+    private static void processUserCommands() {
+        //until game needs to be started, keep accepting and processing commands
+        boolean keepProcessingUserCommands = true;
+        final Console console = System.console();
+        while(keepProcessingUserCommands) {
+            //display prompt
+            System.out.print(">");
+            //read user command
+            String userCommand = console.readLine();
+            //parse command
+            CommandProcessor.processCommand(userCommand);
+            //if game is ready to start (when numPlayers>=2 and start command was given)
+            if(GameFactory.gameStartSignalled()) {
+                keepProcessingUserCommands = false;
+                break;
+            }
+        }
+    }
 
   private static void printHelpText() {
     System.out.println();
