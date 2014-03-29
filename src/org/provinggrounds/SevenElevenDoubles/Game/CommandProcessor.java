@@ -8,6 +8,7 @@ public final class CommandProcessor {
     /**
      * Process user's commands
      * @param userCommand Command to be processed. Pass entire command line in a single String.
+     *                    If null, empty or invalid, no action is taken
      */
     public static void processCommand(String userCommand) {
         //stub
