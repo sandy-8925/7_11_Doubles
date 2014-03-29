@@ -11,6 +11,8 @@ public final class CommandProcessor {
      *                    If null, empty or invalid, no action is taken
      */
     public static void processCommand(String userCommand) {
-        //stub
+        //no action taken for invalid input
+        if(userCommand == null || userCommand.isEmpty()) return;
+
     }
 }
