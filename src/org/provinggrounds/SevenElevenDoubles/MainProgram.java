@@ -13,7 +13,7 @@ import java.io.IOException;
 public final class MainProgram {
 
     private static final String helpTextResourceFile = "HelpText";
-    private static final String RESOURCE_DIR = "./resources/";
+    private static final String RESOURCE_DIR = "./res/resources/";
 
     public static void main(String args[]) {
         printHelpText();
