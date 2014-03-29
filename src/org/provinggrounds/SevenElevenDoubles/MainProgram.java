@@ -48,7 +48,7 @@ public final class MainProgram {
     /**
      * Prints help text to screen
      */
-    private static void printHelpText() {
+    public static void printHelpText() {
         System.out.println();
         try {
             List<String> helpTextLines = Files.readAllLines(Paths.get(RESOURCE_DIR + helpTextResourceFile), StandardCharsets.UTF_8);
